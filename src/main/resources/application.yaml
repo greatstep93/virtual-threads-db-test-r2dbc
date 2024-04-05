@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: virtual-threads-db-test
+  r2dbc:
+    url: r2dbc:postgresql://greatstep.ru:9999/threads_test
+    username: postgres
+    password: djljgfl
+    properties:
+      schema: public
+    pool:
+      enabled: true
+      initial-size: 50
+      max-size: 50
+      max-idle-time: 301m
+      max-acquire-time: 2m
+      max-life-time: 301m
+
+
